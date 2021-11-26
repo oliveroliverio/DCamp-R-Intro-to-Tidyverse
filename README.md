@@ -132,8 +132,9 @@ gapminder %>% filter(year==2007) %>% mutate(lifeExpMonths=12*lifeExp) %>% arrang
 ## Visualizing with ggplot2
 ![](img/2021-11-25-21-51-49.png)
 ![](img/2021-11-25-21-52-14.png)
+![](img/2021-11-25-21-58-23.png)
 
-## Variable assignment
+## [Variable assignment](https://campus.datacamp.com/courses/introduction-to-the-tidyverse/data-visualization?ex=2)
 
 ## Comparing population and GDP per capita
 
