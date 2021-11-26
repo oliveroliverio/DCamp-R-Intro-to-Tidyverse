@@ -82,12 +82,47 @@ gapminder %>%
 ```
 
 ## Filtering and arranging
+```R
+library(gapminder)
+library(dplyr)
+
+# Filter for the year 1957, then arrange in descending order of population
+gapminder %>% filter(year==1957) %>% arrange(desc(pop))
+
+
+
+```
 
 ## The mutate verb
+![](img/2021-11-25-21-49-02.png)
+![](img/2021-11-25-21-49-18.png)
+![](img/2021-11-25-21-49-39.png)
+![](img/2021-11-25-21-49-59.png)
+![](img/2021-11-25-21-50-31.png)
 
 ## Using mutate to change or create a column
+```R
+library(gapminder)
+library(dplyr)
+
+# Use mutate to change lifeExp to be in months
+gapminder %>% mutate(lifeExp = lifeExp*12)
+
+# Use mutate to create a new column called lifeExpMonths
+gapminder %>% mutate(lifeExpMonths=lifeExp*12)
+```
 
 ## Combining filter, mutate, and arrange
+```R
+
+library(gapminder)
+library(dplyr)
+
+# Filter, mutate, and arrange the gapminder dataset
+gapminder %>% filter(year==2007) %>% mutate(lifeExpMonths=12*lifeExp) %>% arrange(desc(lifeExpMonths))
+
+
+```
 
 
 # 2 Data visualization
@@ -95,6 +130,8 @@ gapminder %>%
 
 
 ## Visualizing with ggplot2
+![](img/2021-11-25-21-51-49.png)
+![](img/2021-11-25-21-52-14.png)
 
 ## Variable assignment
 
