@@ -7,6 +7,12 @@
 
 
 ## The gapminder dataset
+![](img/2021-11-25-21-37-49.png)
+![](img/2021-11-25-21-38-21.png)
+![](img/2021-11-25-21-38-32.png)
+![](img/2021-11-25-21-38-40.png)
+![](img/2021-11-25-21-38-53.png)
+![](img/2021-11-25-21-39-01.png)
 
 ## Loading the gapminder and dplyr packages
 
