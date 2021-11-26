@@ -15,18 +15,71 @@
 ![](img/2021-11-25-21-39-01.png)
 
 ## Loading the gapminder and dplyr packages
+```R
+# Load the gapminder package
+library(gapminder)
 
+# Load the dplyr package
+library(dplyr)
+
+# Look at the gapminder dataset
+gapminder
+
+```
 ## Understanding a data frame
+- how many rows in dataset?
+```R
+dim(gapminder)
+```
 
 ## The filter verb
-
+![](img/2021-11-25-21-42-50.png)
+![](img/2021-11-25-21-43-18.png)
+![](img/2021-11-25-21-43-33.png)
+![](img/2021-11-25-21-43-44.png)
+![](img/2021-11-25-21-44-01.png)
 ## Filtering for one year
+```R
+library(gapminder)
+library(dplyr)
+
+# Filter the gapminder dataset for the year 1957
+gapminder %>%
+  filter(year==1957)
+```
 
 ## Filtering for one country and one year
+```R
+library(gapminder)
+library(dplyr)
+
+# Filter for China in 2002
+gapminder %>%
+  filter(country=="China", year==2002)
+```
 
 ## The arrange verb
+![](img/2021-11-25-21-46-12.png)
+![](img/2021-11-25-21-46-33.png)
+![](img/2021-11-25-21-46-50.png)
+![](img/2021-11-25-21-47-02.png)
+![](img/2021-11-25-21-47-16.png)
 
 ## Arranging observations by life expectancy
+```R
+library(gapminder)
+library(dplyr)
+
+# Sort in ascending order of lifeExp
+gapminder %>%
+  arrange(desc(lifeExp))
+
+# Sort in descending order of lifeExp
+gapminder %>%
+  arrange(lifeExp)
+
+
+```
 
 ## Filtering and arranging
 
